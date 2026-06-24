@@ -1,41 +1,40 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function ProfileForm() {
-  const [leetcode, setLeetcode] = useState("");
-  const [codeforces, setCodeforces] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = () => {
-    setSubmitted(true);
-  };
+  const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="input-section">
+
       <input
         type="text"
-        placeholder="Enter LeetCode Username"
-        value={leetcode}
-        onChange={(e) => setLeetcode(e.target.value)}
+        placeholder="LeetCode Username"
       />
 
       <input
         type="text"
-        placeholder="Enter Codeforces Username"
-        value={codeforces}
-        onChange={(e) => setCodeforces(e.target.value)}
+        placeholder="Codeforces Username"
       />
 
-      <button onClick={handleSubmit}>
+      <input
+        type="text"
+        placeholder="GitHub Username"
+      />
+
+      <input
+        type="text"
+        placeholder="CodeChef Username"
+      />
+
+      <input
+        type="text"
+        placeholder="AtCoder Username"
+      />
+
+      <button onClick={() => navigate("/dashboard")}>
         Analyze Profile
       </button>
 
-      {submitted && (
-        <div>
-          <h3>Profile Information</h3>
-          <p>LeetCode: {leetcode}</p>
-          <p>Codeforces: {codeforces}</p>
-        </div>
-      )}
     </div>
   );
 }

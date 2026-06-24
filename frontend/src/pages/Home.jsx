@@ -2,12 +2,14 @@ import ProfileForm from "../components/ProfileForm";
 
 function Home() {
   return (
-    <div>
-      <h1>CP Analytics Platform</h1>
+    <div className="container">
+      <div className="hero">
+        <h1>CP Analytics Platform</h1>
 
-      <p>
-        Analyze your LeetCode and Codeforces profile
-      </p>
+        <p>
+          Analyze your coding profiles across platforms
+        </p>
+      </div>
 
       <ProfileForm />
     </div>

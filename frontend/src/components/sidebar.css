@@ -1,0 +1,12 @@
+.sidebar { width: 180px; flex-shrink: 0; background: #fff; border-right: 0.5px solid #e5e5e5; display: flex; flex-direction: column; padding: 16px 10px; gap: 4px; overflow-y: auto; }
+.sidebar-label { font-size: 10px; font-weight: 500; color: #999; letter-spacing: .08em; text-transform: uppercase; padding: 8px 8px 4px; }
+.pcard { border-radius: 8px; padding: 9px 10px; cursor: pointer; transition: all 0.12s; display: flex; align-items: center; gap: 10px; border: 1px solid transparent; }
+.pcard:hover { background: #f5f5f5; }
+.pcard.active { background: #EEEDFE; border-color: #AFA9EC; }
+.pcard-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.pcard-name { font-size: 13px; font-weight: 500; color: #1a1a1a; line-height: 1.2; }
+.pcard.active .pcard-name { color: #3C3489; }
+.pcard-sub { font-size: 10px; color: #aaa; margin-top: 1px; }
+.sidebar-footer { margin-top: auto; padding-top: 12px; border-top: 0.5px solid #e5e5e5; }
+.sidebar-footer-btn { width: 100%; padding: 8px 10px; font-size: 12px; color: #666; background: none; border: 0.5px solid #e5e5e5; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background 0.12s; }
+.sidebar-footer-btn:hover { background: #f5f5f5; }
